@@ -17,7 +17,7 @@ Contributions to this repository are welcome! If you have any exercise solutions
 - Title: Problem Solving with Algorithms and Data Structures using Python
 - Authors: Brad Miller and David Ranum
 - Institution: Luther College
-- Book Website: [https://runestone.academy/runestone/books/published/pythonds3](https://runestone.academy/runestone/books/published/pythonds3)
+- Book Website: [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/ns/books/published/pythonds3/index.html)
 
 Please refer to the book's website for the official content, including chapters, explanations, and interactive exercises provided by the authors.
 
