@@ -1,4 +1,4 @@
-class Queue():
+class Queue:
     
     def __init__(self) -> None:
         '''Create a new queue'''
