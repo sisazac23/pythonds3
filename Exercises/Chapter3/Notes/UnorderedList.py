@@ -49,3 +49,60 @@ class UnorderedList:
             self.head = current.next
         else:
             previous.next = current.next
+
+        
+    def append(self, item):
+        current = self.head
+        previous = None
+
+        while current != None:
+            previous = current
+            current = current.next
+        
+        temp = Node(item)
+        previous.next = temp
+
+    def insert(self, pos, item):
+        current = self.head
+        previous = None
+        count = 0
+
+        while count != pos:
+            previous = current
+            current = current.next
+            count += 1
+        
+        temp = Node(item)
+        previous.next = temp
+        temp.next = current
+    
+    def index(self, item):
+        current = self.head
+        count = 0
+
+        while current != None:
+            if current.data == item:
+                return count
+            current = current.next
+            count += 1
+        
+        return -1
+    
+    def pop(self, pos=None):
+        current = self.head
+        previous = None
+        count = 0
+
+        if pos == None:
+            while current.next != None:
+                previous = current
+                current = current.next
+            previous.next = None
+            return current.data
+        else:
+            while count != pos:
+                previous = current
+                current = current.next
+                count += 1
+            previous.next = current.next
+            return current.data
